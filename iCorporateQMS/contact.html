@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - iCorporate QMS</title>
+    <meta name="description" content="Contact iCorporate QMS for ISO certification, NABH accreditation, or quality system implementation consulting.">
+    <!-- Fontshare CDN - Satoshi Font Family -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display:flex; flex-direction:column; min-height:100vh;">
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo"><img src="assets/logo.png" alt="iCorporate QMS Logo" style="height: 60px; width: auto;"></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="clients.html">Our Clients</a>
+                <a href="blog.html">Insights</a>
+                <a href="contact.html" class="nav-cta">Consultation</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container reveal">
+            <div class="section-label" style="justify-content:center;">Reach Out</div>
+            <h1 class="headline mb-2">Get in Touch</h1>
+            <p class="body-lg" style="max-width:580px; margin:0 auto;">Take the first step towards operational excellence and regulatory compliance. Request a consultation below.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-white" style="flex-grow:1;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: var(--sp-8); align-items: flex-start;">
+
+                <!-- Contact Information -->
+                <div class="reveal">
+                    <div class="section-label">Contact Details</div>
+                    <h2 class="title mb-3">How Can We Help You?</h2>
+                    <p class="body mb-4">Whether you are an educational institution seeking NABET accreditation, a healthcare facility aiming for NABH, or an enterprise pursuing ISO certification, our expert consultants are ready to tailor a solution for you.</p>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Headquarters</h4>
+                            <p>123 Quality Assurance Blvd, Tech Park, Suite 400<br>Ernakulam, KL 682001, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+91 98765 43210<br>+1 (555) 123-4567 (International)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>consult@icorporateqms.com<br>info@icorporateqms.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="reveal delay-200">
+                    <div class="form-card">
+                        <h3>Request a Consultation</h3>
+                        <form id="contactForm">
+                            <div class="grid grid-2 gap-2 mb-3">
+                                <div>
+                                    <label class="form-label" for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" required placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="form-label" for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" required placeholder="Smith">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Email Address *</label>
+                                <input type="email" id="email" required placeholder="john@company.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="organization">Organization / Institution Name</label>
+                                <input type="text" id="organization" placeholder="Your Organization">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="serviceInterest">Service of Interest</label>
+                                <select id="serviceInterest">
+                                    <option value="">— Select a Service —</option>
+                                    <option value="iso9001">ISO 9001 QMS Certification</option>
+                                    <option value="isoother">Other ISO Certification (13485, 22000, 21001)</option>
+                                    <option value="nabh">NABH Accreditation</option>
+                                    <option value="nabet">NABET Accreditation</option>
+                                    <option value="process">Process Improvement Consulting</option>
+                                    <option value="digital">Digital QMS Implementation</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label" for="message">How can we help you? *</label>
+                                <textarea id="message" rows="5" required style="resize:vertical;" placeholder="Describe your requirements..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width:100%; font-size:0.95rem; padding:0.875rem;">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col reveal delay-100">
+                    <a href="index.html" class="logo" style="margin-bottom:var(--sp-2);"><img src="assets/logo.png" alt="iCorporate QMS Logo" style="height: 70px; width: auto;"></a>
+                    <p>Expert consulting for Quality Management Systems, ISO certifications, and institutional accreditations worldwide.</p>
+                </div>
+                <div class="footer-col reveal delay-200">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="clients.html">Our Clients</a>
+                    </div>
+                </div>
+                <div class="footer-col reveal delay-300">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html">ISO Certification</a>
+                        <a href="services.html">NABH Accreditation</a>
+                        <a href="services.html">NABET Compliance</a>
+                        <a href="services.html">Digital QMS</a>
+                    </div>
+                </div>
+                <div class="footer-col reveal delay-400">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-envelope footer-contact-icon"></i>info@icorporateqms.com</p>
+                    <p><i class="fa-solid fa-phone footer-contact-icon"></i>+91 98765 43210</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iCorporate QMS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
