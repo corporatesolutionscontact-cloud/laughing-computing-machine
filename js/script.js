@@ -124,18 +124,36 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Lead save notice:', err);
       }
 
-      setTimeout(() => {
+      fetch('https://formsubmit.co/ajax/office@icorporateqms.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => response.json())
+      .then(() => {
         consultationForm.reset();
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalBtnText;
-
         if (formSuccess) {
           formSuccess.style.display = 'block';
           setTimeout(() => {
             formSuccess.style.display = 'none';
           }, 7000);
         }
-      }, 800);
+      })
+      .catch(err => {
+        console.warn('FormSubmit AJAX notification:', err);
+        // Fallback to local confirm state if request fails
+        consultationForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        if (formSuccess) {
+          formSuccess.style.display = 'block';
+        }
+      });
     });
   }
 });
