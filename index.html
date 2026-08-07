@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iCorporateQMS — Management Systems &amp; Organizational Excellence Consultants</title>
-    <meta name="description" content="iCorporateQMS is a premier management consulting practice specializing in Management Systems, Organizational Excellence, Quality Council of India (QCI) frameworks, Sustainability, and Operational Improvement.">
+    <title>iCorporateQMS — Management Systems Consultants</title>
+    <meta name="description" content="iCorporateQMS is a premier management consulting firm specializing in Management Systems, Organizational Excellence, Quality Council of India (QCI) frameworks, Sustainability, and Operational Improvement.">
     
     <!-- Fontshare CDN — Satoshi Font Family -->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
@@ -17,26 +17,31 @@
 </head>
 <body>
 
-    <!-- ==================== STICKY HEADER / NAVIGATION ==================== -->
+    <!-- ==================== HEADER NAVIGATION ==================== -->
     <header class="header">
         <div class="container navbar">
-            <a href="#home" class="logo">
-                <div class="logo-brand-mark">
-                    <span class="logo-title">iCorporateQMS</span>
-                    <span class="logo-sub">Management Systems &amp; Organizational Excellence</span>
+            <a href="#home" class="brand-logo">
+                <svg class="brand-logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="#000000" stroke-width="2.5" fill="none"/>
+                    <polygon points="16,8 24,13 24,19 16,24 8,19 8,13" stroke="#000000" stroke-width="1.5" fill="none"/>
+                </svg>
+                <div class="brand-logo-text">
+                    <span class="brand-title">iCorporateQMS</span>
+                    <span class="brand-subtitle">Management Systems Consultants</span>
                 </div>
             </a>
 
-            <nav class="nav-links" id="nav-links">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#practice" class="nav-link">Practice</a>
-                <a href="#sectors" class="nav-link">Sectors</a>
-                <a href="#methodology" class="nav-link">Methodology</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#contact" class="btn btn-primary nav-cta">Schedule a Consultation</a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-menu-link active">Home</a>
+                <a href="#practice" class="nav-menu-link">Practice</a>
+                <a href="#about" class="nav-menu-link">Expertise</a>
+                <a href="#industries" class="nav-menu-link">Industries</a>
+                <a href="#approach" class="nav-menu-link">Our Approach</a>
+                <a href="#contact" class="nav-menu-link">Contact</a>
+                <a href="#contact" class="btn btn-black" style="padding: 0.55rem 1.1rem;">Request a Consultation</a>
             </nav>
 
-            <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle Navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
@@ -44,80 +49,62 @@
 
     <main>
         <!-- ==================== HERO SECTION ==================== -->
-        <section id="home" class="hero">
+        <section id="home" class="hero-section">
             <div class="container">
                 <div class="hero-grid">
                     
-                    <!-- Left: Copy & Messaging -->
-                    <div class="hero-content reveal">
-                        <div class="hero-eyebrow">
-                            <i class="fa-solid fa-layer-group" style="font-size:0.75rem;"></i>
-                            Management Systems &amp; Organizational Excellence
-                        </div>
-
-                        <h1 class="display">
-                            Building Better Organizations Through Management Excellence
+                    <!-- Left: Display Copy -->
+                    <div class="reveal">
+                        <h1 class="hero-display-title">
+                            Building Better Organizations Through Management Excellence.
                         </h1>
 
-                        <p class="body-lg">
-                            For over 15 years, iCorporateQMS has partnered with educational institutions, healthcare organizations, manufacturers and service organizations to build internationally recognized management systems that strengthen governance, improve operational performance and support continual improvement.
+                        <p class="hero-lead-text">
+                            For over 15 years, iCorporateQMS has partnered with educational institutions, healthcare organizations, manufacturers and service enterprises to design management systems that strengthen governance, improve operational performance and support sustainable growth.
                         </p>
 
-                        <div class="hero-tagline">
+                        <p class="hero-tagline-text">
                             International standards become the framework—not the objective.
-                        </div>
+                        </p>
 
-                        <div class="hero-actions">
-                            <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
-                            <a href="#contact" class="btn btn-secondary">Contact Us <i class="fa-solid fa-arrow-right" style="font-size:0.8em;"></i></a>
+                        <div class="hero-btn-group">
+                            <a href="#contact" class="btn btn-black">Request a Consultation &nbsp;&rarr;</a>
+                            <a href="#contact" class="btn btn-outline">Contact Us</a>
                         </div>
                     </div>
 
-                    <!-- Right: Architectural Geometric Line Graphic -->
-                    <div class="hero-visual reveal delay-200">
-                        <div class="hero-illustration-wrapper">
-                            <svg viewBox="0 0 520 400" xmlns="http://www.w3.org/2000/svg" fill="none" style="width:100%; height:auto;">
-                                <!-- Grid Lines -->
-                                <pattern id="architectural-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E5E5" stroke-width="1"/>
-                                </pattern>
-                                <rect width="520" height="400" fill="url(#architectural-grid)" />
-
-                                <!-- Structural Architectural Isometric Framework (Monochrome) -->
-                                <!-- Base Grid Plane -->
-                                <polygon points="60,280 260,370 460,280 260,190" fill="#FFFFFF" stroke="#111111" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
+                    <!-- Right: Architectural Concrete Building Vector Rendering -->
+                    <div class="reveal delay-100">
+                        <div class="hero-architectural-frame">
+                            <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" fill="none" style="width:100%; height:auto;">
+                                <!-- Sky backdrop gradient (Monochrome) -->
+                                <rect width="560" height="420" fill="#EAEAEA"/>
                                 
-                                <!-- Core Structural Pillars -->
-                                <line x1="60" y1="280" x2="60" y2="150" stroke="#111111" stroke-width="1.5"/>
-                                <line x1="260" y1="370" x2="260" y2="240" stroke="#111111" stroke-width="2"/>
-                                <line x1="460" y1="280" x2="460" y2="150" stroke="#111111" stroke-width="1.5"/>
-                                <line x1="260" y1="190" x2="260" y2="60" stroke="#111111" stroke-width="1.5" stroke-dasharray="3 3"/>
+                                <!-- Background Diagonal Architectural Geometry -->
+                                <polygon points="0,0 560,0 560,180 0,340" fill="#D6D6D6"/>
 
-                                <!-- Interlocking Governance Cube 1 (Lower Level) -->
-                                <polygon points="120,260 260,320 260,240 120,180" fill="#F5F5F5" stroke="#111111" stroke-width="1.5"/>
-                                <polygon points="260,320 400,260 400,180 260,240" fill="#E5E5E5" stroke="#111111" stroke-width="1.5"/>
-                                <polygon points="120,180 260,240 400,180 260,120" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+                                <!-- Brutalist Concrete Structure Main Facade Block -->
+                                <polygon points="120,420 560,420 560,60 380,0 120,120" fill="#F8F8F8" stroke="#111111" stroke-width="1.5"/>
 
-                                <!-- Interlocking Operational Excellence Cube 2 (Elevated Level) -->
-                                <polygon points="180,180 260,215 260,140 180,105" fill="#333333" stroke="#111111" stroke-width="1.5"/>
-                                <polygon points="260,215 340,180 340,105 260,140" fill="#111111" stroke="#111111" stroke-width="1.5"/>
-                                <polygon points="180,105 260,140 340,105 260,70" fill="#FFFFFF" stroke="#111111" stroke-width="1.5"/>
+                                <!-- Angular Cantilever Roof & Cast Shadow -->
+                                <polygon points="120,120 380,0 560,60 300,180" fill="#111111"/>
 
-                                <!-- Architectural Vectors & Nodes -->
-                                <circle cx="260" cy="70" r="4" fill="#111111"/>
-                                <circle cx="180" cy="105" r="4" fill="#111111"/>
-                                <circle cx="340" cy="105" r="4" fill="#111111"/>
-                                <circle cx="260" cy="140" r="4" fill="#111111"/>
+                                <!-- Diagonal Light & Shadow Plane 1 -->
+                                <polygon points="180,420 460,420 460,150 180,240" fill="#E2E2E2" stroke="#111111" stroke-width="1"/>
 
-                                <line x1="260" y1="70" x2="260" y2="30" stroke="#111111" stroke-width="1.5" stroke-dasharray="2 2"/>
-                                <circle cx="260" cy="30" r="6" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
+                                <!-- Concrete Pillar / Portal Entrance Facade -->
+                                <polygon points="240,420 360,420 360,260 240,300" fill="#111111"/>
+                                <polygon points="260,420 340,420 340,280 260,310" fill="#FFFFFF"/>
 
-                                <!-- Labels -->
-                                <rect x="310" y="35" width="170" height="32" rx="4" fill="#111111"/>
-                                <text x="395" y="55" font-family="Satoshi, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Organizational Excellence</text>
+                                <!-- Structural Concrete Recessed Windows Grid -->
+                                <rect x="380" y="160" width="40" height="60" fill="#111111"/>
+                                <rect x="440" y="140" width="40" height="60" fill="#111111"/>
+                                <rect x="380" y="240" width="40" height="60" fill="#111111"/>
+                                <rect x="440" y="220" width="40" height="60" fill="#111111"/>
 
-                                <rect x="35" y="325" width="160" height="30" rx="4" fill="#FFFFFF" stroke="#111111" stroke-width="1"/>
-                                <text x="115" y="344" font-family="Satoshi, sans-serif" font-size="10" font-weight="600" fill="#333333" text-anchor="middle">Management Systems Framework</text>
+                                <!-- Architectural Perspective Axis Lines -->
+                                <line x1="0" y1="340" x2="560" y2="160" stroke="#111111" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+                                <line x1="120" y1="120" x2="560" y2="340" stroke="#111111" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
                             </svg>
                         </div>
                     </div>
@@ -127,642 +114,449 @@
         </section>
 
         <!-- ==================== ABOUT SECTION ==================== -->
-        <section id="about" class="section section-white">
+        <section id="about" class="section about-section">
             <div class="container">
-                <div class="about-box reveal">
-                    <div class="section-label">About iCorporateQMS</div>
-                    <h2 class="headline mb-3">Management Systems &amp; Organizational Excellence</h2>
+                <div class="about-grid">
                     
-                    <p class="body-lg">
-                        At iCorporateQMS, we believe effective management systems should strengthen organizations—not simply satisfy certification requirements.
-                    </p>
-
-                    <p class="body mb-4">
-                        We partner with leadership teams to design, implement and continually improve practical management systems that enhance governance, operational efficiency, compliance and long-term organizational performance.
-                    </p>
-
-                    <p class="body mb-4">
-                        With over 15 years of consulting experience, our focus is on building systems that create measurable value beyond certification.
-                    </p>
-
-                    <div class="about-features">
-                        <div class="about-feature-item">
-                            <h4>15+ Years Advisory</h4>
-                            <p class="body-sm">Proven track record across educational institutions, healthcare systems, and industrial enterprises.</p>
-                        </div>
-                        <div class="about-feature-item">
-                            <h4>Governance &amp; Performance</h4>
-                            <p class="body-sm">Practical management frameworks engineered to drive sustainable operational efficiency and governance.</p>
-                        </div>
-                        <div class="about-feature-item">
-                            <h4>Beyond Certification</h4>
-                            <p class="body-sm">Focusing on institutional quality culture and measurable long-term organizational value.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== OUR PRACTICE SECTION ==================== -->
-        <section id="practice" class="section section-grey">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Core Capabilities</div>
-                    <h2 class="headline">Our Consulting Practice</h2>
-                </div>
-
-                <div class="grid grid-2" style="gap: var(--sp-6);">
-                    
-                    <!-- Practice Card 1 -->
-                    <div class="practice-card reveal delay-100">
-                        <div class="practice-card-header">
-                            <h3 class="card-title">Management Systems</h3>
-                            <p class="body-sm">Designing and implementing internationally recognised management systems engineered for governance and operational control.</p>
-                        </div>
-                        <div class="practice-list">
-                            <div class="practice-list-title">Frameworks Include</div>
-                            <div class="practice-pills">
-                                <span class="tag">ISO 9001</span>
-                                <span class="tag">ISO 14001</span>
-                                <span class="tag">ISO 21001</span>
-                                <span class="tag">ISO 45001</span>
-                                <span class="tag">ISO 50001</span>
-                                <span class="tag">ISO 13485</span>
-                                <span class="tag">ISO 15189</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Practice Card 2 -->
-                    <div class="practice-card reveal delay-200">
-                        <div class="practice-card-header">
-                            <h3 class="card-title">Quality Council of India (QCI)</h3>
-                            <p class="body-sm">Supporting organizations through Quality Council of India frameworks and institutional accreditation requirements.</p>
-                        </div>
-                        <div class="practice-list">
-                            <div class="practice-list-title">Services Include</div>
-                            <div class="practice-pills">
-                                <span class="tag">NABET</span>
-                                <span class="tag">NABL</span>
-                                <span class="tag">Institutional Quality Systems</span>
-                                <span class="tag">Academic Governance</span>
-                                <span class="tag">Laboratory Quality Systems</span>
-                                <span class="tag">Compliance Readiness</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Practice Card 3 -->
-                    <div class="practice-card reveal delay-100">
-                        <div class="practice-card-header">
-                            <h3 class="card-title">Sustainability Advisory</h3>
-                            <p class="body-sm">Helping organizations evaluate environmental impact, optimize resource utilization, and improve sustainability performance.</p>
-                        </div>
-                        <div class="practice-list">
-                            <div class="practice-list-title">Services Include</div>
-                            <div class="practice-pills">
-                                <span class="tag">Green Audits</span>
-                                <span class="tag">Energy Audits</span>
-                                <span class="tag">Carbon Footprint Assessment</span>
-                                <span class="tag">Environmental Management</span>
-                                <span class="tag">ESG Readiness</span>
-                                <span class="tag">ISO 14001</span>
-                                <span class="tag">ISO 50001</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Practice Card 4 -->
-                    <div class="practice-card reveal delay-200">
-                        <div class="practice-card-header">
-                            <h3 class="card-title">Assurance &amp; Improvement</h3>
-                            <p class="body-sm">Helping organizations evaluate, audit, and continuously refine management systems to achieve institutional maturity.</p>
-                        </div>
-                        <div class="practice-list">
-                            <div class="practice-list-title">Services Include</div>
-                            <div class="practice-pills">
-                                <span class="tag">Gap Analysis</span>
-                                <span class="tag">Internal Audits</span>
-                                <span class="tag">Documentation Development</span>
-                                <span class="tag">Training</span>
-                                <span class="tag">Management Review</span>
-                                <span class="tag">Certification Readiness</span>
-                                <span class="tag">Continual Improvement</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SECTORS WE SERVE SECTION ==================== -->
-        <section id="sectors" class="section section-white">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Domain Leadership</div>
-                    <h2 class="headline">Sectors We Serve</h2>
-                </div>
-
-                <div class="grid grid-2" style="gap: var(--sp-6);">
-                    
-                    <!-- Sector Card 1: Education -->
-                    <div class="sector-card reveal delay-100">
-                        <h3 class="card-title">Educational Institutions</h3>
-                        <p class="body-sm">Comprehensive accreditation and governance frameworks for higher education and academic trusts.</p>
-                        
-                        <div class="sector-card-grid">
-                            <div class="sector-column">
-                                <h5>Supporting</h5>
-                                <ul class="sector-item-list">
-                                    <li>Schools &amp; Colleges</li>
-                                    <li>Universities</li>
-                                    <li>Medical &amp; Dental Colleges</li>
-                                    <li>Nursing &amp; Pharmacy Colleges</li>
-                                    <li>Allied Health Sciences</li>
-                                    <li>Engineering &amp; Polytechnics</li>
-                                    <li>Teacher Education &amp; Trusts</li>
-                                </ul>
-                            </div>
-                            <div class="sector-column">
-                                <h5>Solutions</h5>
-                                <ul class="sector-item-list">
-                                    <li>ISO 21001 Implementation</li>
-                                    <li>NABET Accreditation</li>
-                                    <li>Academic Governance</li>
-                                    <li>Institutional Excellence</li>
-                                    <li>Internal Quality Systems</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sector Card 2: Healthcare -->
-                    <div class="sector-card reveal delay-200">
-                        <h3 class="card-title">Healthcare &amp; Laboratories</h3>
-                        <p class="body-sm">Clinical governance, laboratory standards, and healthcare quality management systems.</p>
-                        
-                        <div class="sector-card-grid">
-                            <div class="sector-column">
-                                <h5>Supporting</h5>
-                                <ul class="sector-item-list">
-                                    <li>Hospitals &amp; Healthcare Facilities</li>
-                                    <li>Diagnostic Centres</li>
-                                    <li>Clinical Laboratories</li>
-                                    <li>Medical Laboratories</li>
-                                    <li>Medical Device Organizations</li>
-                                </ul>
-                            </div>
-                            <div class="sector-column">
-                                <h5>Solutions</h5>
-                                <ul class="sector-item-list">
-                                    <li>NABL Accreditation Support</li>
-                                    <li>ISO 15189 Laboratory Standard</li>
-                                    <li>ISO 13485 Medical Devices</li>
-                                    <li>Clinical Governance</li>
-                                    <li>Laboratory Excellence</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sector Card 3: Manufacturing -->
-                    <div class="sector-card reveal delay-100">
-                        <h3 class="card-title">Manufacturing</h3>
-                        <p class="body-sm">Operational control, environmental safety, and energy performance for industrial plants.</p>
-                        
-                        <div class="sector-card-grid">
-                            <div class="sector-column">
-                                <h5>Supporting</h5>
-                                <ul class="sector-item-list">
-                                    <li>Engineering Enterprises</li>
-                                    <li>Industrial Manufacturing</li>
-                                    <li>Medical Devices Facilities</li>
-                                    <li>Food Processing Plants</li>
-                                    <li>Production Facilities &amp; Process</li>
-                                </ul>
-                            </div>
-                            <div class="sector-column">
-                                <h5>Solutions</h5>
-                                <ul class="sector-item-list">
-                                    <li>ISO 9001 Quality Systems</li>
-                                    <li>ISO 14001 &amp; ISO 45001 EHS</li>
-                                    <li>ISO 50001 Energy Management</li>
-                                    <li>Green &amp; Energy Audits</li>
-                                    <li>Carbon Footprint Assessment</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sector Card 4: Service Organizations -->
-                    <div class="sector-card reveal delay-200">
-                        <h3 class="card-title">Service Organizations</h3>
-                        <p class="body-sm">Process optimization, risk governance, and operational assurance for public and private institutions.</p>
-                        
-                        <div class="sector-card-grid">
-                            <div class="sector-column">
-                                <h5>Supporting</h5>
-                                <ul class="sector-item-list">
-                                    <li>Information Technology (IT &amp; ITES)</li>
-                                    <li>Consulting &amp; Professional Firms</li>
-                                    <li>Financial &amp; Banking Services</li>
-                                    <li>Hospitality &amp; Logistics</li>
-                                    <li>Government Bodies &amp; Public Sector</li>
-                                    <li>NGOs &amp; Non-Profits</li>
-                                </ul>
-                            </div>
-                            <div class="sector-column">
-                                <h5>Solutions</h5>
-                                <ul class="sector-item-list">
-                                    <li>Quality Management Systems</li>
-                                    <li>Corporate Governance</li>
-                                    <li>Operational Excellence</li>
-                                    <li>Risk Management Frameworks</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== SIGNATURE METHODOLOGY SECTION ==================== -->
-        <section id="methodology" class="section pdca-section-wrapper">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Consulting Methodology</div>
-                    <h2 class="headline mb-2">Plan • Do • Check • Act</h2>
-                    <p class="body-lg" style="max-width: 760px; margin: 0 auto;">
-                        Every successful organization is built on continual improvement. Every consulting engagement follows the internationally recognised Plan–Do–Check–Act methodology, ensuring practical implementation, measurable outcomes and sustainable organizational performance.
-                    </p>
-                </div>
-
-                <div class="pdca-container reveal">
-                    
-                    <!-- Left: Interactive Circular PDCA Graphic -->
-                    <div class="pdca-graphic-box">
-                        <svg class="pdca-circle-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Outer Ring Track -->
-                            <circle cx="200" cy="200" r="185" fill="none" stroke="#E5E5E5" stroke-width="2"/>
-                            <circle cx="200" cy="200" r="130" fill="none" stroke="#E5E5E5" stroke-width="1.5" stroke-dasharray="4 4"/>
+                    <!-- Left: Radar / Alignment Diagram Graphic -->
+                    <div class="reveal">
+                        <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:320px; height:auto; display:block; margin:0 auto;">
+                            <!-- Concentric Radar Alignment Circles -->
+                            <circle cx="180" cy="180" r="160" fill="#F8F9FA" stroke="#E2E8F0" stroke-width="1.5"/>
+                            <circle cx="180" cy="180" r="120" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="3 3"/>
+                            <circle cx="180" cy="180" r="80" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+                            <circle cx="180" cy="180" r="40" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="2 2"/>
                             
-                            <!-- Quadrant 1: PLAN (Top Right) -->
-                            <g class="pdca-quadrant active" data-phase="plan">
-                                <path d="M 200 20 A 180 180 0 0 1 380 200 L 200 200 Z" fill="#111111" stroke="#FFFFFF" stroke-width="2"/>
-                                <text x="280" y="125" font-family="Satoshi, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">PLAN</text>
-                            </g>
-                            
-                            <!-- Quadrant 2: DO (Bottom Right) -->
-                            <g class="pdca-quadrant" data-phase="do">
-                                <path d="M 380 200 A 180 180 0 0 1 200 380 L 200 200 Z" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="2"/>
-                                <text x="280" y="285" font-family="Satoshi, sans-serif" font-size="16" font-weight="700" fill="#111111" text-anchor="middle">DO</text>
-                            </g>
-                            
-                            <!-- Quadrant 3: CHECK (Bottom Left) -->
-                            <g class="pdca-quadrant" data-phase="check">
-                                <path d="M 200 380 A 180 180 0 0 1 20 200 L 200 200 Z" fill="#E5E5E5" stroke="#FFFFFF" stroke-width="2"/>
-                                <text x="120" y="285" font-family="Satoshi, sans-serif" font-size="16" font-weight="700" fill="#111111" text-anchor="middle">CHECK</text>
-                            </g>
-                            
-                            <!-- Quadrant 4: ACT (Top Left) -->
-                            <g class="pdca-quadrant" data-phase="act">
-                                <path d="M 20 200 A 180 180 0 0 1 200 20 L 200 200 Z" fill="#333333" stroke="#FFFFFF" stroke-width="2"/>
-                                <text x="120" y="125" font-family="Satoshi, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">ACT</text>
-                            </g>
+                            <!-- Crosshair Axes -->
+                            <line x1="20" y1="180" x2="340" y2="180" stroke="#111111" stroke-width="1"/>
+                            <line x1="180" y1="20" x2="180" y2="340" stroke="#111111" stroke-width="1"/>
 
-                            <!-- Center Hub -->
-                            <circle cx="200" cy="200" r="65" fill="#FFFFFF" stroke="#111111" stroke-width="2"/>
-                            <text x="200" y="195" font-family="Satoshi, sans-serif" font-size="12" font-weight="800" fill="#111111" text-anchor="middle">PDCA</text>
-                            <text x="200" y="212" font-family="Satoshi, sans-serif" font-size="9" font-weight="500" fill="#666666" text-anchor="middle">CONTINUAL</text>
-                            <text x="200" y="224" font-family="Satoshi, sans-serif" font-size="9" font-weight="500" fill="#666666" text-anchor="middle">IMPROVEMENT</text>
+                            <!-- Target Precision Points -->
+                            <circle cx="180" cy="180" r="4" fill="#000000"/>
+                            <circle cx="260" cy="180" r="3" fill="#000000"/>
+                            <circle cx="180" cy="100" r="3" fill="#000000"/>
+                            <circle cx="100" cy="180" r="3" fill="#000000"/>
+                            <circle cx="180" cy="260" r="3" fill="#000000"/>
+                            <circle cx="220" cy="140" r="2.5" fill="#777777"/>
+                            <circle cx="140" cy="220" r="2.5" fill="#777777"/>
+
+                            <path d="M 140 220 L 180 180 L 220 140 L 260 180" fill="none" stroke="#111111" stroke-width="1" stroke-dasharray="2 2"/>
                         </svg>
                     </div>
 
-                    <!-- Right: Deliverables Grid -->
-                    <div class="pdca-cards-grid">
+                    <!-- Right: Text Content -->
+                    <div class="reveal delay-100">
+                        <div class="about-eyebrow">ABOUT US</div>
+                        <h2 class="about-title">Management Systems &amp; Organizational Excellence</h2>
                         
-                        <!-- PLAN Card -->
-                        <div class="pdca-phase-card active" data-phase="plan">
-                            <div class="pdca-phase-header">
-                                <span class="pdca-phase-tag">Phase 01</span>
-                                <h4>PLAN</h4>
-                            </div>
-                            <ul class="pdca-phase-bullets">
-                                <li>Understand</li>
-                                <li>Assess</li>
-                                <li>Design</li>
-                                <li>Leadership Consultation</li>
-                                <li>Risk Assessment</li>
-                                <li>Implementation Roadmap</li>
-                            </ul>
-                        </div>
-
-                        <!-- DO Card -->
-                        <div class="pdca-phase-card" data-phase="do">
-                            <div class="pdca-phase-header">
-                                <span class="pdca-phase-tag" style="background:#333333;">Phase 02</span>
-                                <h4>DO</h4>
-                            </div>
-                            <ul class="pdca-phase-bullets">
-                                <li>Documentation</li>
-                                <li>Implementation</li>
-                                <li>Training</li>
-                                <li>Change Management</li>
-                                <li>Leadership Engagement</li>
-                            </ul>
-                        </div>
-
-                        <!-- CHECK Card -->
-                        <div class="pdca-phase-card" data-phase="check">
-                            <div class="pdca-phase-header">
-                                <span class="pdca-phase-tag" style="background:#666666;">Phase 03</span>
-                                <h4>CHECK</h4>
-                            </div>
-                            <ul class="pdca-phase-bullets">
-                                <li>Internal Audits</li>
-                                <li>Performance Evaluation</li>
-                                <li>Compliance Review</li>
-                                <li>Management Review</li>
-                                <li>Readiness Assessment</li>
-                            </ul>
-                        </div>
-
-                        <!-- ACT Card -->
-                        <div class="pdca-phase-card" data-phase="act">
-                            <div class="pdca-phase-header">
-                                <span class="pdca-phase-tag" style="background:#111111;">Phase 04</span>
-                                <h4>ACT</h4>
-                            </div>
-                            <ul class="pdca-phase-bullets">
-                                <li>Corrective Actions</li>
-                                <li>Process Improvement</li>
-                                <li>Optimization</li>
-                                <li>Continual Improvement</li>
-                                <li>Long-Term Advisory</li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== CERTIFICATION & ACCREDITATION SUPPORT ==================== -->
-        <section id="accreditation" class="section section-white">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Advisory Support</div>
-                    <h2 class="headline mb-2">Certification &amp; Accreditation Advisory</h2>
-                    <p class="body-lg" style="max-width: 720px; margin: 0 auto;">
-                        Our consultants have extensive experience supporting organizations through certification and accreditation programmes conducted by nationally and internationally recognised assessment bodies.
-                    </p>
-                </div>
-
-                <!-- Monochrome Logo Cards Grid -->
-                <div class="accreditation-grid reveal delay-100">
-                    
-                    <div class="logo-card">
-                        <div class="logo-card-title">IRClass</div>
-                        <div class="logo-card-sub">Indian Register Quality Systems</div>
-                    </div>
-
-                    <div class="logo-card">
-                        <div class="logo-card-title">TÜV</div>
-                        <div class="logo-card-sub">International Certification</div>
-                    </div>
-
-                    <div class="logo-card">
-                        <div class="logo-card-title">Quality Austria</div>
-                        <div class="logo-card-sub">System Certification Body</div>
-                    </div>
-
-                    <div class="logo-card">
-                        <div class="logo-card-title">QCI</div>
-                        <div class="logo-card-sub">Quality Council of India</div>
-                    </div>
-
-                </div>
-
-                <p class="disclaimer-text reveal delay-200">
-                    iCorporateQMS is an independent consulting practice and is not affiliated with any certification or accreditation body.
-                </p>
-            </div>
-        </section>
-
-        <!-- ==================== WHY iCorporateQMS & COMMITMENT ==================== -->
-        <section id="why-us" class="section section-grey">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Value Proposition</div>
-                    <h2 class="headline">Why iCorporateQMS</h2>
-                </div>
-
-                <div class="grid grid-2 mb-8" style="gap: var(--sp-6);">
-                    
-                    <!-- Stat Card 1 -->
-                    <div class="value-card reveal delay-100">
-                        <div class="stat-number">15+</div>
-                        <h4>Years of Consulting Experience</h4>
-                        <p class="body-sm">Over a decade and a half of dedicated advisory service guiding institutional leaders across South Asia.</p>
-                    </div>
-
-                    <!-- Stat Card 2 -->
-                    <div class="value-card reveal delay-200">
-                        <div class="stat-number">Independent</div>
-                        <h4>Objective &amp; Practical Advisory</h4>
-                        <p class="body-sm">Unbiased management system design engineered strictly for client operational benefit and governance resilience.</p>
-                    </div>
-
-                    <!-- Stat Card 3 -->
-                    <div class="value-card reveal delay-100">
-                        <div class="stat-number">Cross-Sector</div>
-                        <h4>Cross-Sector Expertise</h4>
-                        <p class="body-sm">Specialized domain knowledge in Education, Healthcare, Manufacturing, and Service Organizations.</p>
-                    </div>
-
-                    <!-- Stat Card 4 -->
-                    <div class="value-card reveal delay-200">
-                        <div class="stat-number">End-to-End</div>
-                        <h4>End-to-End Engagement</h4>
-                        <div class="pipeline-flow">
-                            <span class="pipeline-step">Assessment</span>
-                            <span class="pipeline-arrow">→</span>
-                            <span class="pipeline-step">Implementation</span>
-                            <span class="pipeline-arrow">→</span>
-                            <span class="pipeline-step">Internal Audit</span>
-                            <span class="pipeline-arrow">→</span>
-                            <span class="pipeline-step">Certification Support</span>
-                            <span class="pipeline-arrow">→</span>
-                            <span class="pipeline-step">Continual Improvement</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Commitment Box -->
-                <div class="commitment-box reveal">
-                    <div class="section-label" style="justify-content:center;">Our Commitment</div>
-                    <h2 class="headline mb-3">Beyond Certification. Towards Organizational Excellence.</h2>
-                    <p class="body-lg" style="max-width: 800px; margin: 0 auto var(--sp-4);">
-                        Certification is only one milestone. Our objective is to help organizations strengthen governance, improve operational performance, build resilient management systems and create a culture of continual improvement.
-                    </p>
-                    <p class="body" style="font-weight: 500;">
-                        We deliver practical consulting that creates measurable long-term value.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== CALL TO ACTION SECTION ==================== -->
-        <section id="cta" class="section section-white">
-            <div class="container reveal">
-                <div class="cta-banner">
-                    <div class="section-label" style="justify-content:center;">Initiate Advisory</div>
-                    <h2 class="headline mb-3">Let's Start the Conversation</h2>
-                    <p class="body-lg" style="max-width: 640px; margin: 0 auto var(--sp-6);">
-                        Whether you're strengthening governance, preparing for accreditation, implementing management systems or improving organizational performance, our consultants are ready to help.
-                    </p>
-                    <a href="#contact" class="btn btn-primary" style="font-size: 1rem; padding: 1rem 2.5rem;">Schedule a Consultation</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== CONTACT & CONSULTATION FORM SECTION ==================== -->
-        <section id="contact" class="section section-white">
-            <div class="container">
-                <div class="text-center mb-8 reveal">
-                    <div class="section-label" style="justify-content:center;">Get in Touch</div>
-                    <h2 class="headline">Consultation Request</h2>
-                </div>
-
-                <div class="contact-grid">
-                    
-                    <!-- Left: Contact Information -->
-                    <div class="reveal">
-                        <h3 class="title mb-3">Professional Advisory</h3>
-                        <p class="body mb-4">
-                            Contact our consulting practice to discuss your management system requirements, QCI accreditation readiness, or organizational excellence strategy.
+                        <p class="hero-lead-text mb-3">
+                            At iCorporateQMS, we help organizations build practical, sustainable management systems that drive continual improvement.
                         </p>
 
-                        <div class="contact-info-card">
-                            <h4>Email Address</h4>
-                            <p><a href="mailto:office@icorporateqms.com">office@icorporateqms.com</a></p>
+                        <p class="hero-lead-text">
+                            We combine industry expertise, structured implementation and internationally recognized standards to help organizations improve governance, operational efficiency and long-term performance.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OUR ADVISORY PRACTICE ==================== -->
+        <section id="practice" class="section section-grey">
+            <div class="container">
+                <div class="section-header-centered reveal">
+                    <h2>OUR ADVISORY PRACTICE</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="grid-4">
+                    
+                    <!-- Card 1 -->
+                    <div class="practice-card reveal delay-100">
+                        <div class="practice-icon"><i class="fa-solid fa-ribbon"></i></div>
+                        <h3 class="practice-card-title">Management Systems Consulting</h3>
+                        <p class="practice-desc">Design, implement and continually improve management systems aligned with international best practices.</p>
+                        
+                        <ul class="bullet-list">
+                            <li>ISO 9001</li>
+                            <li>ISO 14001</li>
+                            <li>ISO 21001</li>
+                            <li>ISO 45001</li>
+                            <li>ISO 50001</li>
+                            <li>ISO 13485</li>
+                            <li>ISO 15189</li>
+                        </ul>
+                        
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="practice-card reveal delay-200">
+                        <div class="practice-icon"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3 class="practice-card-title">Quality Council of India (QCI)</h3>
+                        <p class="practice-desc">Supporting organizations through QCI frameworks for excellence and accreditation readiness.</p>
+                        
+                        <div class="sub-section-heading">NABET</div>
+                        <ul class="bullet-list">
+                            <li>Institutional Quality Systems</li>
+                            <li>Academic Governance</li>
+                            <li>Documentation</li>
+                            <li>Internal Assessments</li>
+                            <li>Compliance Readiness</li>
+                        </ul>
+
+                        <div class="sub-section-heading">NABL</div>
+                        <ul class="bullet-list">
+                            <li>Laboratory Quality Systems</li>
+                            <li>Accreditation Readiness</li>
+                            <li>Internal Audits</li>
+                            <li>CAPA &amp; Management Review</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="practice-card reveal delay-300">
+                        <div class="practice-icon"><div style="display:inline-block; transform:rotate(-45deg);"><i class="fa-solid fa-leaf"></i></div></div>
+                        <h3 class="practice-card-title">Sustainability Advisory</h3>
+                        <p class="practice-desc">Helping organizations improve environmental performance and resource efficiency.</p>
+                        
+                        <ul class="bullet-list">
+                            <li>Green Audits</li>
+                            <li>Energy Audits</li>
+                            <li>Carbon Footprint Assessment</li>
+                            <li>Environmental Compliance</li>
+                            <li>ESG Readiness</li>
+                            <li>Sustainability Reporting</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="practice-card reveal delay-400">
+                        <div class="practice-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="practice-card-title">Assurance &amp; Improvement</h3>
+                        <p class="practice-desc">Helping organizations evaluate, improve and sustain management systems.</p>
+                        
+                        <ul class="bullet-list">
+                            <li>Internal Audits</li>
+                            <li>Gap Assessments</li>
+                            <li>Documentation</li>
+                            <li>Risk Management</li>
+                            <li>Management Reviews</li>
+                            <li>Certification Readiness</li>
+                            <li>Continual Improvement</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== OUR CONSULTING METHODOLOGY ==================== -->
+        <section id="approach" class="section methodology-wrapper">
+            <div class="container">
+                <div class="section-header-centered reveal">
+                    <h2>OUR CONSULTING METHODOLOGY</h2>
+                    <p>A proven cycle of continual improvement that drives sustainable organizational performance.</p>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="pdca-layout-grid reveal">
+                    
+                    <!-- Top Left & Bottom Left Callouts -->
+                    <div style="display:flex; flex-direction:column; gap:2.5rem;">
+                        <div class="pdca-callout-block">
+                            <h4>PLAN</h4>
+                            <ul class="bullet-list">
+                                <li>Understand Organization</li>
+                                <li>Assess &amp; Analyze</li>
+                                <li>Design Systems</li>
+                                <li>Plan Implementation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pdca-callout-block">
+                            <h4>ACT</h4>
+                            <ul class="bullet-list">
+                                <li>Correct &amp; Prevent</li>
+                                <li>Improve Processes</li>
+                                <li>Optimize Performance</li>
+                                <li>Sustain &amp; Grow</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Center Circular PDCA SVG Diagram -->
+                    <div class="pdca-center-diagram">
+                        <svg class="pdca-svg-chart" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Ring -->
+                            <circle cx="180" cy="180" r="170" fill="none" stroke="#000000" stroke-width="1.5"/>
+                            <line x1="180" y1="10" x2="180" y2="350" stroke="#000000" stroke-width="1.5"/>
+                            <line x1="10" y1="180" x2="350" y2="180" stroke="#000000" stroke-width="1.5"/>
+
+                            <!-- PLAN (Top Left Quadrant) -->
+                            <g transform="translate(110, 100)">
+                                <circle cx="20" cy="20" r="16" fill="#F8F9FA" stroke="#000000" stroke-width="1"/>
+                                <path d="M 14 14 L 26 14 L 26 26 L 14 26 Z M 17 18 L 23 18 M 17 22 L 23 22" stroke="#000000" stroke-width="1.2" fill="none"/>
+                                <text x="20" y="48" font-family="Satoshi, sans-serif" font-size="13" font-weight="800" fill="#000000" text-anchor="middle">PLAN</text>
+                            </g>
+
+                            <!-- DO (Top Right Quadrant) -->
+                            <g transform="translate(230, 100)">
+                                <circle cx="20" cy="20" r="16" fill="#F8F9FA" stroke="#000000" stroke-width="1"/>
+                                <circle cx="20" cy="20" r="6" stroke="#000000" stroke-width="1.5" fill="none"/>
+                                <text x="20" y="48" font-family="Satoshi, sans-serif" font-size="13" font-weight="800" fill="#000000" text-anchor="middle">DO</text>
+                            </g>
+
+                            <!-- CHECK (Bottom Right Quadrant) -->
+                            <g transform="translate(230, 220)">
+                                <circle cx="20" cy="20" r="16" fill="#F8F9FA" stroke="#000000" stroke-width="1"/>
+                                <circle cx="18" cy="18" r="5" stroke="#000000" stroke-width="1.2" fill="none"/>
+                                <line x1="22" y1="22" x2="27" y2="27" stroke="#000000" stroke-width="1.5"/>
+                                <text x="20" y="48" font-family="Satoshi, sans-serif" font-size="13" font-weight="800" fill="#000000" text-anchor="middle">CHECK</text>
+                            </g>
+
+                            <!-- ACT (Bottom Left Quadrant) -->
+                            <g transform="translate(110, 220)">
+                                <circle cx="20" cy="20" r="16" fill="#F8F9FA" stroke="#000000" stroke-width="1"/>
+                                <path d="M 14 26 L 18 20 L 22 23 L 26 14" stroke="#000000" stroke-width="1.5" fill="none"/>
+                                <text x="20" y="48" font-family="Satoshi, sans-serif" font-size="13" font-weight="800" fill="#000000" text-anchor="middle">ACT</text>
+                            </g>
+
+                            <!-- Center Hub -->
+                            <circle cx="180" cy="180" r="45" fill="#FFFFFF" stroke="#000000" stroke-width="1.5"/>
+                            <text x="180" y="176" font-family="Satoshi, sans-serif" font-size="10" font-weight="700" fill="#000000" text-anchor="middle">Continual</text>
+                            <text x="180" y="188" font-family="Satoshi, sans-serif" font-size="10" font-weight="700" fill="#000000" text-anchor="middle">Improvement</text>
+                        </svg>
+                    </div>
+
+                    <!-- Top Right & Bottom Right Callouts -->
+                    <div style="display:flex; flex-direction:column; gap:2.5rem;">
+                        <div class="pdca-callout-block">
+                            <h4>DO</h4>
+                            <ul class="bullet-list">
+                                <li>Implement Processes</li>
+                                <li>Develop Documentation</li>
+                                <li>Train &amp; Engage People</li>
+                                <li>Manage Change</li>
+                            </ul>
                         </div>
 
-                        <div class="contact-info-card">
-                            <h4>Corporate Office</h4>
-                            <p>
-                                Chembakassery Building<br>
-                                Opposite Civil Station<br>
-                                Irinjalakuda, Thrissur<br>
-                                Kerala 680121, India
+                        <div class="pdca-callout-block">
+                            <h4>CHECK</h4>
+                            <ul class="bullet-list">
+                                <li>Conduct Internal Audits</li>
+                                <li>Monitor Performance</li>
+                                <li>Review Compliance</li>
+                                <li>Management Review</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== INDUSTRIES WE SERVE ==================== -->
+        <section id="industries" class="section section-grey">
+            <div class="container">
+                <div class="section-header-centered reveal">
+                    <h2>INDUSTRIES WE SERVE</h2>
+                    <div class="header-underline"></div>
+                </div>
+
+                <div class="grid-4">
+                    
+                    <!-- Col 1 -->
+                    <div class="industry-card reveal delay-100">
+                        <div class="industry-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="industry-card-title">Educational Institutions</h3>
+                        
+                        <ul class="bullet-list">
+                            <li>Schools</li>
+                            <li>Colleges &amp; Universities</li>
+                            <li>Medical Colleges</li>
+                            <li>Engineering Colleges</li>
+                            <li>Nursing Colleges</li>
+                            <li>Allied Health Institutions</li>
+                            <li>Educational Trusts</li>
+                            <li>Training Organizations</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="industry-card reveal delay-200">
+                        <div class="industry-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                        <h3 class="industry-card-title">Healthcare &amp; Laboratories</h3>
+                        
+                        <ul class="bullet-list">
+                            <li>Hospitals</li>
+                            <li>Diagnostic Centres</li>
+                            <li>Clinical Laboratories</li>
+                            <li>Medical Laboratories</li>
+                        </ul>
+
+                        <div class="sub-section-heading">Solutions:</div>
+                        <ul class="bullet-list">
+                            <li>NABL</li>
+                            <li>ISO 15189</li>
+                            <li>ISO 13485</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Col 3 -->
+                    <div class="industry-card reveal delay-300">
+                        <div class="industry-icon"><i class="fa-solid fa-industry"></i></div>
+                        <h3 class="industry-card-title">Manufacturing</h3>
+                        
+                        <ul class="bullet-list">
+                            <li>Engineering</li>
+                            <li>Industrial Manufacturing</li>
+                            <li>Medical Devices</li>
+                            <li>Food Processing</li>
+                            <li>Electronics</li>
+                            <li>Automotive</li>
+                        </ul>
+
+                        <div class="sub-section-heading">Solutions:</div>
+                        <ul class="bullet-list">
+                            <li>ISO 9001 &nbsp;•&nbsp; ISO 14001 &nbsp;•&nbsp; ISO 45001</li>
+                            <li>ISO 50001</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Col 4 -->
+                    <div class="industry-card reveal delay-400">
+                        <div class="industry-icon"><i class="fa-solid fa-user-group"></i></div>
+                        <h3 class="industry-card-title">Professional Services</h3>
+                        
+                        <ul class="bullet-list">
+                            <li>IT &amp; ITES</li>
+                            <li>Consulting</li>
+                            <li>Financial Services</li>
+                            <li>Hospitality</li>
+                            <li>Logistics</li>
+                            <li>Government &amp; NGOs</li>
+                        </ul>
+
+                        <a href="#contact" class="link-more">Learn More &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CERTIFICATION & ACCREDITATION ADVISORY ==================== -->
+        <section class="section">
+            <div class="container reveal">
+                <div class="accreditation-box">
+                    <div class="accreditation-grid-layout">
+                        
+                        <!-- Left text -->
+                        <div>
+                            <h3 class="practice-card-title mb-2">CERTIFICATION &amp; ACCREDITATION ADVISORY</h3>
+                            <p class="practice-desc" style="margin-bottom:0;">
+                                Our consultants have supported organizations through assessments conducted by internationally recognized certification and accreditation bodies including:
                             </p>
                         </div>
 
-                        <div class="contact-info-card">
-                            <h4>Consulting Hours</h4>
-                            <p>Monday – Friday: 9:00 AM – 6:00 PM IST</p>
+                        <!-- Right 4 Vector Logos -->
+                        <div class="accreditation-logos">
+                            
+                            <div class="logo-block">
+                                <div>
+                                    <div style="font-size:1.1rem; font-weight:900; letter-spacing:0.05em;">IRCLASS</div>
+                                    <div style="font-size:0.65rem; color:#666; font-weight:600; text-transform:uppercase;">Systems &amp; Solutions</div>
+                                </div>
+                            </div>
+
+                            <div class="logo-block">
+                                <div>
+                                    <div style="font-size:1.35rem; font-weight:900; letter-spacing:0.05em;">TÜV</div>
+                                    <div style="font-size:0.65rem; color:#666; font-weight:700; letter-spacing:0.1em;">AUSTRIA</div>
+                                </div>
+                            </div>
+
+                            <div class="logo-block">
+                                <div>
+                                    <div style="font-size:1rem; font-weight:900; display:flex; align-items:center; gap:3px;">
+                                        <span style="border:1.5px solid #000; padding:0 3px; font-weight:900;">Q</span> qualityaustria
+                                    </div>
+                                    <div style="font-size:0.6rem; color:#666; font-weight:600;">Succeed with Quality</div>
+                                </div>
+                            </div>
+
+                            <div class="logo-block">
+                                <div style="display:flex; align-items:center; gap:6px;">
+                                    <div style="width:24px; height:24px; border:2px solid #000; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:12px;">Q</div>
+                                    <div style="text-align:left;">
+                                        <div style="font-size:0.95rem; font-weight:900; line-height:1;">QCI</div>
+                                        <div style="font-size:0.55rem; color:#666; font-weight:600;">Quality Council of India</div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
 
-                    <!-- Right: Consultation Form with Zoho CRM Integration -->
-                    <div class="reveal delay-200">
-                        <div class="form-card">
-                            <h3 class="card-title mb-4">Request a Consultation</h3>
-                            
-                            <form id="consultation-form">
-                                <div class="grid grid-2 gap-3 mb-3">
-                                    <div>
-                                        <label class="form-label" for="organizationName">Organization Name *</label>
-                                        <input type="text" id="organizationName" name="organizationName" required placeholder="e.g. Apex Healthcare Institute">
-                                    </div>
-                                    <div>
-                                        <label class="form-label" for="contactPerson">Contact Person *</label>
-                                        <input type="text" id="contactPerson" name="contactPerson" required placeholder="e.g. Dr. Rajesh Kumar">
-                                    </div>
-                                </div>
+                    <p style="font-size:0.75rem; color:#777777; text-align:center; margin-top:1.5rem; margin-bottom:0;">
+                        iCorporateQMS is an independent consulting practice and is not affiliated with any certification or accreditation body.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                                <div class="grid grid-2 gap-3 mb-3">
-                                    <div>
-                                        <label class="form-label" for="designation">Designation *</label>
-                                        <input type="text" id="designation" name="designation" required placeholder="e.g. Managing Director">
-                                    </div>
-                                    <div>
-                                        <label class="form-label" for="email">Email Address *</label>
-                                        <input type="email" id="email" name="email" required placeholder="e.g. rajesh@apexhealth.org">
-                                    </div>
-                                </div>
+        <!-- ==================== WHY ORGANIZATIONS CHOOSE ICORPORATEQMS ==================== -->
+        <section class="section section-grey">
+            <div class="container">
+                <div class="section-header-centered reveal">
+                    <h2>WHY ORGANIZATIONS CHOOSE ICORPORATEQMS</h2>
+                    <div class="header-underline"></div>
+                </div>
 
-                                <div class="grid grid-2 gap-3 mb-3">
-                                    <div>
-                                        <label class="form-label" for="phone">Phone Number *</label>
-                                        <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
-                                    </div>
-                                    <div>
-                                        <label class="form-label" for="organizationType">Organization Type *</label>
-                                        <select id="organizationType" name="organizationType" required>
-                                            <option value="">— Select Organization Type —</option>
-                                            <option value="School">School</option>
-                                            <option value="College">College</option>
-                                            <option value="University">University</option>
-                                            <option value="Medical College">Medical College</option>
-                                            <option value="Dental College">Dental College</option>
-                                            <option value="Nursing College">Nursing College</option>
-                                            <option value="Pharmacy College">Pharmacy College</option>
-                                            <option value="Allied Health Institution">Allied Health Institution</option>
-                                            <option value="Hospital">Hospital</option>
-                                            <option value="Laboratory">Laboratory</option>
-                                            <option value="Manufacturing">Manufacturing</option>
-                                            <option value="Service Organization">Service Organization</option>
-                                            <option value="Government Body">Government Body</option>
-                                            <option value="NGO">NGO</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
+                <div class="grid-5">
+                    
+                    <div class="value-prop-card reveal delay-100">
+                        <div class="value-prop-icon"><i class="fa-solid fa-award"></i></div>
+                        <h4 class="value-prop-title">15+ Years</h4>
+                        <p class="value-prop-desc">Consulting Experience</p>
+                    </div>
 
-                                <div class="mb-4">
-                                    <label class="form-label">Area of Interest (Select All That Apply)</label>
-                                    <div class="checkbox-grid">
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 9001"> ISO 9001</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 21001"> ISO 21001</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 14001"> ISO 14001</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 45001"> ISO 45001</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 50001"> ISO 50001</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 13485"> ISO 13485</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="ISO 15189"> ISO 15189</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="NABET"> NABET</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="NABL"> NABL</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Green Audit"> Green Audit</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Energy Audit"> Energy Audit</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Carbon Footprint Assessment"> Carbon Footprint</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Gap Analysis"> Gap Analysis</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Internal Audit"> Internal Audit</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Documentation Development"> Documentation</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Training"> Training</label>
-                                        <label class="checkbox-item"><input type="checkbox" name="areaOfInterest" value="Other"> Other</label>
-                                    </div>
-                                </div>
+                    <div class="value-prop-card reveal delay-200">
+                        <div class="value-prop-icon"><i class="fa-regular fa-user"></i></div>
+                        <h4 class="value-prop-title">Independent Advisory</h4>
+                        <p class="value-prop-desc">Objective, Practical, Client-Focused.</p>
+                    </div>
 
-                                <div class="mb-4">
-                                    <label class="form-label" for="message">Message / Scope Description</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="Describe your current management system objectives or accreditation timeline..."></textarea>
-                                </div>
+                    <div class="value-prop-card reveal delay-300">
+                        <div class="value-prop-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <h4 class="value-prop-title">Cross-Sector Expertise</h4>
+                        <p class="value-prop-desc">Education, Healthcare, Manufacturing, Services.</p>
+                    </div>
 
-                                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 1rem;">Schedule Consultation</button>
-                            </form>
+                    <div class="value-prop-card reveal delay-400">
+                        <div class="value-prop-icon"><i class="fa-solid fa-rotate"></i></div>
+                        <h4 class="value-prop-title">End-to-End Engagement</h4>
+                        <p class="value-prop-desc">Assessment &rarr; Implementation &rarr; Audit &rarr; Improvement</p>
+                    </div>
 
-                            <!-- Form Submission Confirmation Card -->
-                            <div class="form-success-message" id="form-success">
-                                <h4 class="mb-1" style="color:var(--color-black);">Consultation Request Received</h4>
-                                <p class="body-sm" style="margin-bottom:0;">
-                                    Thank you. Your request has been logged and assigned to a senior consulting partner. We will contact you within 24 business hours.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="value-prop-card reveal delay-400">
+                        <div class="value-prop-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4 class="value-prop-title">Sustainable Outcomes</h4>
+                        <p class="value-prop-desc">Systems that Create Long-Term Value</p>
                     </div>
 
                 </div>
@@ -770,53 +564,97 @@
         </section>
     </main>
 
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
+    <!-- ==================== INTEGRATED FOOTER & CONTACT SECTION ==================== -->
+    <footer id="contact" class="footer-contact-wrapper">
         <div class="container">
-            <div class="footer-top">
-                <div class="footer-col">
-                    <div class="logo-title mb-1" style="font-size:1.25rem;">iCorporateQMS</div>
-                    <p class="body-sm" style="max-width:280px; margin-bottom: 1rem;">
-                        Management Systems &amp; Organizational Excellence Consultants
-                    </p>
-                    <p class="body-sm" style="color:var(--color-med-grey);">
-                        Helping institutions build governance, operational performance, and sustainable management systems.
-                    </p>
-                </div>
+            <div class="footer-top-grid">
+                
+                <!-- Left: Contact & Corporate Info -->
+                <div class="footer-info-col reveal">
+                    <div class="brand-logo">
+                        <svg class="brand-logo-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="16,2 30,10 30,22 16,30 2,22 2,10" stroke="#FFFFFF" stroke-width="2.5" fill="none"/>
+                            <polygon points="16,8 24,13 24,19 16,24 8,19 8,13" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+                        </svg>
+                        <div class="brand-logo-text">
+                            <span class="brand-title" style="color:#FFFFFF;">iCorporateQMS</span>
+                            <span class="brand-subtitle" style="color:#999999;">Management Systems Consultants</span>
+                        </div>
+                    </div>
 
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#practice">Practice</a>
-                        <a href="#sectors">Sectors</a>
-                        <a href="#methodology">Methodology</a>
-                        <a href="#contact">Contact</a>
+                    <div>
+                        <p style="margin-bottom:0.4rem;"><i class="fa-solid fa-location-dot" style="margin-right:0.5rem; color:#999999;"></i> Chembakassery Building</p>
+                        <p style="margin-bottom:0.4rem; padding-left:1.35rem;">Opposite Civil Station</p>
+                        <p style="margin-bottom:0.4rem; padding-left:1.35rem;">Irinjalakuda, Thrissur</p>
+                        <p style="margin-bottom:0; padding-left:1.35rem;">Kerala — 680121, India</p>
+                    </div>
+
+                    <div>
+                        <p style="margin-bottom:0.4rem;"><i class="fa-solid fa-envelope" style="margin-right:0.5rem; color:#999999;"></i> office@icorporateqms.com</p>
+                        <p style="margin-bottom:0;"><i class="fa-solid fa-phone" style="margin-right:0.5rem; color:#999999;"></i> +91 90656 54290</p>
+                    </div>
+
+                    <div>
+                        <div style="font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:#999999; margin-bottom:0.5rem;">QUICK LINKS</div>
+                        <div class="footer-quick-links">
+                            <a href="#home">Home</a>
+                            <a href="#practice">Practice</a>
+                            <a href="#about">Expertise</a>
+                            <a href="#industries">Industries</a>
+                            <a href="#approach">Our Approach</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="footer-col">
-                    <h4>Core Services</h4>
-                    <div class="footer-links">
-                        <a href="#practice">Management Systems</a>
-                        <a href="#practice">QCI Frameworks (NABET / NABL)</a>
-                        <a href="#practice">Sustainability &amp; Green Audits</a>
-                        <a href="#practice">Assurance &amp; Internal Audits</a>
-                        <a href="#accreditation">Accreditation Advisory</a>
+                <!-- Right: Embedded Consultation Form -->
+                <div class="reveal delay-100">
+                    <div class="footer-form-card">
+                        <form id="consultation-form">
+                            
+                            <div class="form-row-2">
+                                <input type="text" id="formName" required placeholder="Name*">
+                                <input type="text" id="formOrganization" required placeholder="Organization*">
+                            </div>
+
+                            <div class="form-row-2">
+                                <input type="email" id="formEmail" required placeholder="Email*">
+                                <input type="tel" id="formPhone" required placeholder="Phone*">
+                            </div>
+
+                            <div style="margin-bottom: 1rem;">
+                                <select id="formSector" required>
+                                    <option value="">Sector*</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Healthcare & Laboratories">Healthcare &amp; Laboratories</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Professional Services">Professional Services</option>
+                                    <option value="Government / NGO">Government / NGO</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div style="margin-bottom: 1.25rem;">
+                                <textarea id="formMessage" rows="3" placeholder="How can we help you?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-black" style="width:100%; padding:0.8rem;">Schedule a Consultation &nbsp;&rarr;</button>
+                        </form>
+
+                        <div id="form-success" style="display:none; margin-top:1rem; padding:0.75rem; background:#F8F9FA; border:1px solid #000; border-radius:4px; text-align:center; font-size:0.85rem;">
+                            <strong>Thank you.</strong> Your consultation request has been logged. Our consultants will contact you shortly.
+                        </div>
                     </div>
                 </div>
 
-                <div class="footer-col">
-                    <h4>Contact Office</h4>
-                    <p class="body-sm" style="margin-bottom:0.5rem;"><i class="fa-solid fa-envelope" style="margin-right:0.4rem;"></i> office@icorporateqms.com</p>
-                    <p class="body-sm" style="margin-bottom:0.5rem;"><i class="fa-solid fa-location-dot" style="margin-right:0.4rem;"></i> Chembakassery Building, Opp. Civil Station</p>
-                    <p class="body-sm">Irinjalakuda, Thrissur, Kerala 680121, India</p>
-                </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>Copyright &copy; 2026 iCorporateQMS. All Rights Reserved.</p>
-                <p>Management Systems &amp; Organizational Excellence Practice</p>
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 iCorporateQMS. All Rights Reserved.</div>
+                <div>
+                    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a>
+                </div>
             </div>
         </div>
     </footer>

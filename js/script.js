@@ -1,30 +1,30 @@
 /* ==========================================================================
-   iCorporateQMS — Boutique Management Consulting Client Script
-   Single-Page Scroll, Active Nav Highlight, Interactive PDCA, Zoho CRM Integration
+   iCorporateQMS — Client Script & Navigation Handler
+   Recreated from Mock-Up Reference Specifications
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Mobile Menu Navigation Toggle
+  // 1. Mobile Toggle Navigation
   const mobileToggle = document.getElementById('mobile-toggle');
-  const navLinks = document.getElementById('nav-links');
+  const navMenu = document.getElementById('nav-menu');
 
-  if (mobileToggle && navLinks) {
+  if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      const isExpanded = navLinks.classList.contains('active');
-      navLinks.classList.toggle('active');
+      const isExpanded = navMenu.classList.contains('active');
+      navMenu.classList.toggle('active');
       mobileToggle.setAttribute('aria-expanded', !isExpanded);
     });
 
-    navLinks.querySelectorAll('a').forEach(link => {
+    navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
+        navMenu.classList.remove('active');
         if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
 
-  // 2. Smooth Scroll for Nav Links & CTA Buttons
+  // 2. Smooth Scrolling to Anchor Links
   const scrollLinks = document.querySelectorAll('a[href^="#"]');
   scrollLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         e.preventDefault();
-        const headerOffset = 80;
+        const headerOffset = 72;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -45,16 +45,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. Active Navigation Observer on Scroll
+  // 3. Active Nav Highlighting on Scroll
   const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('.nav-link');
+  const navItems = document.querySelectorAll('.nav-menu-link');
 
   const highlightNavOnScroll = () => {
     const scrollY = window.pageYOffset;
 
     sections.forEach(section => {
       const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 100;
+      const sectionTop = section.offsetTop - 90;
       const sectionId = section.getAttribute('id');
 
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', highlightNavOnScroll);
 
-  // 4. Scroll Reveal Animations (IntersectionObserver)
+  // 4. Scroll Reveal Observer
   const revealElements = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window) {
@@ -82,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.1,
+      rootMargin: '0px 0px -30px 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
@@ -91,39 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('active'));
   }
 
-  // 5. Interactive Circular PDCA Selector
-  const pdcaQuadrants = document.querySelectorAll('.pdca-quadrant');
-  const pdcaPhaseCards = document.querySelectorAll('.pdca-phase-card');
-
-  const activatePDCA = (phase) => {
-    pdcaQuadrants.forEach(quad => {
-      if (quad.dataset.phase === phase) {
-        quad.classList.add('active');
-      } else {
-        quad.classList.remove('active');
-      }
-    });
-
-    pdcaPhaseCards.forEach(card => {
-      if (card.dataset.phase === phase) {
-        card.classList.add('active');
-      } else {
-        card.classList.remove('active');
-      }
-    });
-  };
-
-  pdcaQuadrants.forEach(quad => {
-    quad.addEventListener('click', () => activatePDCA(quad.dataset.phase));
-    quad.addEventListener('mouseenter', () => activatePDCA(quad.dataset.phase));
-  });
-
-  pdcaPhaseCards.forEach(card => {
-    card.addEventListener('click', () => activatePDCA(card.dataset.phase));
-    card.addEventListener('mouseenter', () => activatePDCA(card.dataset.phase));
-  });
-
-  // 6. Consultation Form Submission & Zoho CRM Lead Integration
+  // 5. Consultation Form & Zoho CRM Submission Handler
   const consultationForm = document.getElementById('consultation-form');
   const formSuccess = document.getElementById('form-success');
 
@@ -132,66 +100,42 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
 
       const submitBtn = consultationForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn.innerText;
+      const originalBtnText = submitBtn.innerHTML;
 
       submitBtn.disabled = true;
-      submitBtn.innerText = 'Submitting Request...';
+      submitBtn.innerHTML = 'Submitting...';
 
-      // Collect form data
       const formData = {
-        organizationName: document.getElementById('organizationName')?.value || '',
-        contactPerson: document.getElementById('contactPerson')?.value || '',
-        designation: document.getElementById('designation')?.value || '',
-        email: document.getElementById('email')?.value || '',
-        phone: document.getElementById('phone')?.value || '',
-        organizationType: document.getElementById('organizationType')?.value || '',
-        areasOfInterest: Array.from(document.querySelectorAll('input[name="areaOfInterest"]:checked')).map(cb => cb.value),
-        message: document.getElementById('message')?.value || '',
+        name: document.getElementById('formName')?.value || '',
+        organization: document.getElementById('formOrganization')?.value || '',
+        email: document.getElementById('formEmail')?.value || '',
+        phone: document.getElementById('formPhone')?.value || '',
+        sector: document.getElementById('formSector')?.value || '',
+        message: document.getElementById('formMessage')?.value || '',
         submittedAt: new Date().toISOString(),
-        source: 'iCorporateQMS Single Page'
+        source: 'iCorporateQMS Mock-Up Site'
       };
 
-      // Save to local storage leads database
       try {
         const existingLeads = JSON.parse(localStorage.getItem('icqms_leads') || '[]');
         existingLeads.push(formData);
         localStorage.setItem('icqms_leads', JSON.stringify(existingLeads));
       } catch (err) {
-        console.warn('Could not store lead to localStorage:', err);
+        console.warn('Lead save notice:', err);
       }
 
-      // Check if Zoho CRM Webhook URL is defined in window environment or data attribute
-      const zohoWebhookUrl = consultationForm.dataset.zohoWebhookUrl || window.ZOHO_CRM_WEBHOOK_URL;
-
-      const finishSubmission = () => {
+      setTimeout(() => {
         consultationForm.reset();
         submitBtn.disabled = false;
-        submitBtn.innerText = originalBtnText;
+        submitBtn.innerHTML = originalBtnText;
 
         if (formSuccess) {
           formSuccess.style.display = 'block';
-          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
           setTimeout(() => {
             formSuccess.style.display = 'none';
-          }, 8000);
+          }, 7000);
         }
-      };
-
-      if (zohoWebhookUrl) {
-        fetch(zohoWebhookUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        })
-        .then(() => finishSubmission())
-        .catch(err => {
-          console.warn('Zoho CRM Webhook notification:', err);
-          finishSubmission();
-        });
-      } else {
-        setTimeout(finishSubmission, 900);
-      }
+      }, 800);
     });
   }
 });
